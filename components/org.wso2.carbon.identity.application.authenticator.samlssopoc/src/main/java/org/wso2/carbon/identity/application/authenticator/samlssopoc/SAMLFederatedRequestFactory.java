@@ -19,7 +19,7 @@ public class SAMLFederatedRequestFactory extends HttpIdentityRequestFactory{
     }
 
     @Override
-    public IdentityRequest.IdentityRequestBuilder create(IdentityRequest.IdentityRequestBuilder builder, HttpServletRequest request, HttpServletResponse response)
+    public void create(IdentityRequest.IdentityRequestBuilder builder, HttpServletRequest request, HttpServletResponse response)
             throws FrameworkClientException {
 
         super.create(builder, request, response);
@@ -27,7 +27,6 @@ public class SAMLFederatedRequestFactory extends HttpIdentityRequestFactory{
 
         samlFederatedRequestBuilder.setSAMLResponse(request.getParameter(SAMLFederatedRequest.SAMLFederatedRequestConstants.SAML_RESPONSE));
         samlFederatedRequestBuilder.setRequestDataKey(request.getParameter(SAMLFederatedRequest.SAMLFederatedRequestConstants.RELAY_STATE));
-        return builder ;
     }
 
     @Override

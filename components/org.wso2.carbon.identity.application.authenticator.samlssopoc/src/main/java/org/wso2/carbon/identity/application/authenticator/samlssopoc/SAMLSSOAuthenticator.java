@@ -38,6 +38,7 @@ import org.wso2.carbon.identity.framework.authentication.processor.handler.authe
         .AuthenticationHandlerException;
 import org.wso2.carbon.identity.framework.authentication.processor.handler.authentication.impl.AuthenticationResponse;
 import org.wso2.carbon.identity.framework.authentication.processor.handler.authentication.impl.model.AbstractSequence;
+import org.wso2.carbon.identity.framework.authentication.processor.request.AuthenticationRequest;
 import org.wso2.carbon.identity.framework.authentication.processor.request.LocalAuthenticationRequest;
 
 import java.util.HashMap;
