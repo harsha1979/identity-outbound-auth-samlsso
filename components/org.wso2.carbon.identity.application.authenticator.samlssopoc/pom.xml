@@ -20,9 +20,9 @@
         <groupId>org.wso2.carbon.identity</groupId>
         <artifactId>identity-application-auth-samlsso-poc</artifactId>
         <relativePath>../../pom.xml</relativePath>
-        <version>5.5.0-SNAPSHOT</version>
+        <version>5.6.0-SNAPSHOT</version>
     </parent>
-    <version>5.5.0-SNAPSHOT</version>
+    <version>5.6.0-SNAPSHOT</version>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>org.wso2.carbon.identity.application.authenticator.samlssopoc</artifactId>
     <packaging>bundle</packaging>
@@ -41,11 +41,11 @@
             <artifactId>org.wso2.carbon.ui</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.wso2.carbon.identity</groupId>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
             <artifactId>org.wso2.carbon.identity.base</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.wso2.carbon.identity</groupId>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
             <artifactId>org.wso2.carbon.identity.core</artifactId>
         </dependency>
         <dependency>
@@ -57,11 +57,11 @@
             <artifactId>org.wso2.carbon.logging</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.wso2.carbon.identity</groupId>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
             <artifactId>org.wso2.carbon.identity.framework</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.wso2.carbon.identity</groupId>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
             <artifactId>org.wso2.carbon.identity.framework.authentication</artifactId>
         </dependency>
         <dependency>
@@ -69,7 +69,7 @@
             <artifactId>opensaml</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.wso2.carbon.identity</groupId>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
             <artifactId>org.wso2.carbon.identity.application.common</artifactId>
         </dependency>
         <dependency>

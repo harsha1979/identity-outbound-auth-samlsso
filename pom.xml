@@ -27,7 +27,7 @@
     <groupId>org.wso2.carbon.identity</groupId>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>identity-application-auth-samlsso-poc</artifactId>
-    <version>5.5.0-SNAPSHOT</version>
+    <version>5.6.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>WSO2 Carbon - SAML SSO Application Authenticator Feature Aggregator Module</name>
     <description>
@@ -61,12 +61,12 @@
                 <version>${carbon.kernel.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.carbon.identity</groupId>
+                <groupId>org.wso2.carbon.identity.framework</groupId>
                 <artifactId>org.wso2.carbon.identity.base</artifactId>
                 <version>${identity.framework.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.carbon.identity</groupId>
+                <groupId>org.wso2.carbon.identity.framework</groupId>
                 <artifactId>org.wso2.carbon.identity.core</artifactId>
                 <version>${identity.framework.version}</version>
             </dependency>
@@ -81,22 +81,12 @@
                 <version>${carbon.kernel.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.carbon.identity</groupId>
-                <artifactId>org.wso2.carbon.identity.framework</artifactId>
-                <version>${identity.framework.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.wso2.carbon.identity</groupId>
-                <artifactId>org.wso2.carbon.identity.framework.authentication</artifactId>
-                <version>${identity.framework.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>org.wso2.orbit.org.opensaml</groupId>
                 <artifactId>opensaml</artifactId>
                 <version>${opensaml2.wso2.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.carbon.identity</groupId>
+                <groupId>org.wso2.carbon.identity.framework</groupId>
                 <artifactId>org.wso2.carbon.identity.application.common</artifactId>
                 <version>${identity.framework.version}</version>
             </dependency>
@@ -106,14 +96,14 @@
                 <version>${encoder.wso2.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.carbon.identity</groupId>
+                <groupId>org.wso2.carbon.identity.framework</groupId>
                 <artifactId>org.wso2.carbon.identity.framework</artifactId>
-                <version>${identity.framework.version}</version>
+                <version>${identity.framework.SNAPSHOT.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.carbon.identity</groupId>
+                <groupId>org.wso2.carbon.identity.framework</groupId>
                 <artifactId>org.wso2.carbon.identity.framework.authentication</artifactId>
-                <version>${identity.framework.version}</version>
+                <version>${identity.framework.SNAPSHOT.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -199,7 +189,8 @@
     <properties>
         <carbon.kernel.version>4.4.6</carbon.kernel.version>
         <commons-collections.version>3.2.0.wso2v1</commons-collections.version>
-        <identity.framework.version>5.5.0-SNAPSHOT</identity.framework.version>
+        <identity.framework.SNAPSHOT.version>5.6.0-SNAPSHOT</identity.framework.SNAPSHOT.version>
+        <identity.framework.version>5.6.14</identity.framework.version>
         <opensaml2.wso2.version>2.6.4.wso2v2</opensaml2.wso2.version>
         <encoder.wso2.version>1.2.0.wso2v1</encoder.wso2.version>
         <maven.buildnumber.plugin.version>1.4</maven.buildnumber.plugin.version>
